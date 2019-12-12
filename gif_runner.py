@@ -1,5 +1,23 @@
 from urllib.request import Request, urlopen
-import os
+import os, time
+import pir_communication as comm
+
+def run(art):
+    try:
+        store_gif(art)
+        gif = get_gif()
+        comm.setup()
+        
+        while True:
+            show_first_image(art, gif)
+            check = 0
+            while check != 1:
+                check = comm.current_state
+                time.sleep(0.1)
+                comm.check_motion()
+                
+            if check:
+                run_gif(art, gif)
 
 def store_gif(art):
     fname = 'tmp.gif'
@@ -59,7 +77,7 @@ def show_first_image(art, gif):
         return ''
       
 def run_gif(art, gif):
-    i = 1
+    i = 0
     try:
         while True:
             cv2.imshow('{} gif'.format(art.Name), gif[i])
