@@ -9,7 +9,7 @@ def run(art):
         comm.setup()
         
         while True:
-            show_first_image(art, gif)
+            show_first_image(art, gif[0])
             check = 0
             while check != 1:
                 check = comm.current_state
@@ -17,7 +17,14 @@ def run(art):
                 comm.check_motion()
                 
             if check:
-                run_gif(art, gif)
+                run_gif(art, gif[0])
+                
+     except:
+        print('Something is broken')
+        
+     finally:
+        cleanup()
+        
 
 def store_gif(art):
     fname = 'tmp.gif'
