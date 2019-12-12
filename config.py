@@ -1,1 +1,0 @@
-owner_addr = '0x98cb6107a67da3375F16C304aEffe1FCC0b1239f'
