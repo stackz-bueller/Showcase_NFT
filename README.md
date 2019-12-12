@@ -15,8 +15,7 @@ formats, jpg, png, gif. The images are scaled accordingly since most NFT Art is 
 - Open the config.py file and replace text in owner_addr to your ether address, under quotes
 - Open engine.py and run script
 
-- Script will randomly choose 5 NFT Tokens inside wallet and displays them
-- Script handles both still images and gifs of any size
+- Script will run gif off motion sensing
 
 ### Next Up
 Will be adding a seperate branch to work with motion activated gifs using gpio on Raspberry Pi
