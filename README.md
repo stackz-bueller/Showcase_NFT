@@ -1,4 +1,4 @@
-# Showcase_NFT
+# Showcase_NFT (PIR Controlled Gif)
 Python Script that gathers NFT ERC 721 in ethereal address using OpenSeas API, and displays it using OpenCV
 
 ## Description of Program
