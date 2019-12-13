@@ -2,6 +2,16 @@ from urllib.request import Request, urlopen
 import os, time
 import pir_communication as comm
 
+def grab_wallet():
+    erc721_address = 'Enter Ethereum Address'
+    art_wallet = b.buildIt(c.owner_addr)
+    return art_wallet
+
+def do():
+    wallet = grab_wallet()
+    token = [i for i in wallet if i.TokenID == '5864']
+    run(token)
+
 def run(art):
     try:
         store_gif(art)
