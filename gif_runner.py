@@ -10,7 +10,10 @@ def grab_wallet():
 def do():
     wallet = grab_wallet()
     token = [i for i in wallet if i.TokenID == '5864']
-    run(token)
+    try:
+        run(token)
+    except:
+        print('Check Token')
 
 def run(art):
     try:
