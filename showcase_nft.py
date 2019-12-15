@@ -235,23 +235,15 @@ def show_art(art):
         interpolation = cv2.INTER_AREA) for img in imgs]
 
         i = 0
-        if(art.Name == 'WASHINGTON VIDEO GAME'):
-            while True:
-                cv2.imshow('{} gif'.format(art.Name), imgs[i])
-                if cv2.waitKey(100)&0xFF == 27:
-                    break
-                time.sleep(0.1)
-                i = (i+1)%nums
+        
+        while True:
+            cv2.imshow('{} gif'.format(art.Name), imgs[i])
+            if cv2.waitKey(100)&0xFF == 27:
+                break
+            i = (i+1)%nums
 
-        else:
-            while True:
-                cv2.imshow('{} gif'.format(art.Name), imgs[i])
-                if cv2.waitKey(100)&0xFF == 27:
-                    break
-                i = (i+1)%nums
-
-            cv2.destroyAllWindows()
-            cv2.waitKey(1)
+        cv2.destroyAllWindows()
+        cv2.waitKey(1)
 
     finally:
         cv2.waitKey(1)
