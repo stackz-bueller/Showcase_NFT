@@ -1,5 +1,5 @@
 # Showcase_NFT
-Python Script that gathers NFT ERC 721 in ethereal address using OpenSeas API, and displays it using OpenCV
+Python Script that gathers NFT ERC 721 in ether address using OpenSeas API, and displays it using OpenCV
 
 ## Description of Program
 This package calls OpenSeas API and captures response. Next, package formats the information received, and creates custom
