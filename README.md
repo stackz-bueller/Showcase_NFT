@@ -25,7 +25,7 @@ formats, jpg, png, gif. The images are scaled accordingly since most NFT Art is 
 ### To Do
 - Focus on Making Images dynamic in shape for screen dimensions
 - Adding Feature to show NFT Art based on Orientation,
-- - i.e. Landscaped Art and Portrait Art, or solely square shaped Art
+  - i.e. Landscaped Art and Portrait Art, or solely square shaped Art
 - 
 - Update CV to run Full Screen
 - Will be adding a seperate branch to work with motion activated gifs using gpio on Raspberry Pi
