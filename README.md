@@ -23,6 +23,7 @@ formats, jpg, png, gif. The images are scaled accordingly since most NFT Art is 
 - Press ESC for GIFs
 
 ### To Do
+- Focus on Making Images dynamic in shape for screen dimensions
 - Adding Feature to show NFT Art based on Orientation,
 - - i.e. Landscaped Art and Portrait Art, or solely square shaped Art
 - 
